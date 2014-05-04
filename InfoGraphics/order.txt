@@ -1,0 +1,54 @@
+# -----------------------------------------------------------------------------
+# List All Infographics Used in this Training
+# -----------------------------------------------------------------------------
+# Note:
+# - Empty lines are ignored
+# - Comment as usual (start with # after first non-whitespace)
+# - Sections separated by colon-lines (currently no special meaning)
+# - Order mattters for generating combined PDF
+
+:::::::::::::::::::::::::::: Monday
+ExecutionModel
+
+
+StringBasics
+IOStreamBasics
+ParametrizedTypesAndSizes
+
+:::::::::::::::::::::::::::: Monday 2 
+ClassToMemoryMapping
+ContainerImplementations
+RuntimeTypeIdentification
+TypeBasedBranching
+
+:::::::::::::::::::::::::::: Tuesday 1
+UML-ClassesAndRelations 
+MultipleInheritance
+DiamondShapedInheritance
+Example-ClassDesign
+
+:::::::::::::::::::::::::::: Tuesday 2
+STL-SequenceContainers
+STL-ContainerIterators
+STL-IteratorDetails
+STL-AssociativeContainers
+
+:::::::::::::::::::::::::::: Wednesday 1
+STL-IteratorCategories
+STL-IteratorUsages
+
+:::::::::::::::::::::::::::: Wednesday 2
+TemplateBasics
+ReducingCodeBloat
+
+:::::::::::::::::::::::::::: Thursday 1
+GuidingPrinciples
+Example-OpenClosePrinciple
+
+:::::::::::::::::::::::::::: Thursday 2
+ExceptionBasics
+ExceptionDetails
+
+:::::::::::::::::::::::::::: Friday 1
+ResourceManagement
+SmartPointers
