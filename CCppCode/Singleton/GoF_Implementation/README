@@ -1,0 +1,4 @@
+This is the "classical" (GoF-style) implementation of a singleton.
+
+(Note that the singleton objects will be never deleted, so if there
+are other resources but memory to release, resource leaks may occur.)

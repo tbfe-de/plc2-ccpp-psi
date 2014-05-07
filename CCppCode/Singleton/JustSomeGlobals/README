@@ -1,0 +1,3 @@
+This example shows NOT a singleton but its alternative: global variables.
+
+Depending on the order of files when given to the linker, it may be ok or fail.
