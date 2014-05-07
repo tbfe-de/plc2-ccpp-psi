@@ -518,7 +518,7 @@ Any time!!
 <li>links against the C standard library and</li>
 <li>uses the C runtime start up</li>
 </ul></li>
-<li><code>g++ -c somefile.o</code>
+<li><code>g++ somefile.o</code>
 <ul>
 <li>assumes object module in somefile.o</li>
 <li>links against the C++ standard library and</li>
@@ -601,7 +601,7 @@ Any time!!
 <hr />
 <h4 id="dynamic-libraries"><a href="#TOC"><span class="header-section-number">1.4.4.2</span> Dynamic Libraries</a></h4>
 <p>The appropriate view of a <em>Dynamic Library</em> could be that of an executable without a <code>main</code> function. It will be dynamically loaded if it's references satisfy some external references of another executable.</p>
-<p><strong>Dynamic Libraries (Windows: DLLs, Unix/Linux Shared Objectes) are closely interweaved with support from an operating system that will load them on request. i.e. connect them to the address space of the process requirung them.</strong></p>
+<p><strong>Dynamic Libraries (Windows: DLLs, Unix/Linux Shared Objectes) are closely interweaved with support from an operating system that will load them on request. i.e. connect them to the address space of the process requiring them.</strong></p>
 <p>In a sense, for a dynamic library the operating system will do <em>just in time</em> what static linking otherwise does ahead of time.</p>
 <hr />
 <h3 id="linking-means-connecting-references"><a href="#TOC"><span class="header-section-number">1.4.5</span> Linking Means Connecting References</a></h3>

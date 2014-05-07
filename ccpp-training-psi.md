@@ -784,7 +784,7 @@ This starts with (one or more) object file(s):
     * links against the C standard library and
     * uses the C runtime start up
 
-* `g++ -c somefile.o`
+* `g++ somefile.o`
     * assumes object module in somefile.o
     * links against the C++ standard library and
     * uses the C++ runtime startup
@@ -936,7 +936,7 @@ satisfy some external references of another executable.
 
 **Dynamic Libraries (Windows: DLLs, Unix/Linux Shared Objectes) are closely
 interweaved with support from an operating system that will load them on
-request. i.e. connect them to the address space of the process requirung
+request. i.e. connect them to the address space of the process requiring
 them.**
 
 In a sense, for a dynamic library the operating system will do *just in time*
