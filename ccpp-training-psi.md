@@ -1,8 +1,14 @@
-<center>
-Professional Embedded C/C++
-and
-Linux System Programming
+---
 
+<center style="font-size: 250%;">
+Professional Embedded C/C++
+
+and
+
+Linux System Programming
+</center>
+
+<center style="fontsize: 150%;">
 An Inhouse-Training for *Paul Scherrer Institute ([PSI])*
 
 Brought to you by *Programmable Logic Competence Center ([PLC2])*
@@ -3467,9 +3473,9 @@ The the more pragmatic uses of functional programming for type mapping at
 compile time are demonstrated in the final versions of the series of examples
 implementing an algorithm in STL style:
 
-* [Templates/unique_copy4.cpp](CCppCode/Templates/unique_copy4.cpp)
-* [Templates/unique_copy5.cpp](CCppCode/Templates/unique_copy5.cpp)
-* [Templates/unique_copy6.cpp](CCppCode/Templates/unique_copy6.cpp)
+* [Templates/real_uniq_copy4.cpp](CCppCode/Templates/real_uniq_copy4.cpp)
+* [Templates/real_uniq_copy5.cpp](CCppCode/Templates/real_uniq_copy5.cpp)
+* [Templates/real_uniq_copy6.cpp](CCppCode/Templates/real_uniq_copy6.cpp)
 
 ---
 
@@ -3636,7 +3642,7 @@ constructor and destructor of a helper class.
 It is very briefly introduced at the end of AToC §11.2 (from page 118) and gets
 also a very short mention in AToC §4.2.2, but there are numerous external
 resources explaining it in great detail, like it is here:
-<http://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Resource_Acquisition_Is_Initialization>
+http://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Resource_Acquisition_Is_Initialization
 
 See also at the right hand side (not covered so far) of this
 [Info-Graphic](InfoGraphics/ResourceManagement.png).
@@ -3818,14 +3824,14 @@ the message.
 
 The following header helps to turn `#define`-s of error numbers
 into something printable:
-[lib/ename.c.inc](SysProg/lib/ename.c.inc]
+[lib/ename.c.inc](SysProg/lib/ename.c.inc)
 
 ---
 
 #### Helper Functions to Parse Numeric Values From Strings
 
 Those functions are declared in the following header:
-[lib/get_num.h](SysProg/lib/get_num.h]
+[lib/get_num.h](SysProg/lib/get_num.h)
 
 Their implementation is accordingly found here:
 [lib/get_num.c](System/lib/get_num.c)
@@ -3928,7 +3934,7 @@ following example shows how it is done correctly:
 
 The relevant system calls ar illustrated in this example:
 
-* [fileio/t_readv.c](SysProg/fileio/t_readv.c]
+* [fileio/t_readv.c](SysProg/fileio/t_readv.c)
 
 (A similar facility exists for output but has no example program here.)
 
@@ -3944,7 +3950,7 @@ what they add to the versions without the leading `p`.
 
 ---
 
-#### Truncating A File
+#### Truncating a File
 
 The system call `truncate` for doing this is quite easy to understand but
 nevertheless here is an example:
@@ -4047,7 +4053,7 @@ a memory management unit:
 The following example aims to show some ways of allocating data space in
 various regions of the main memory:
 
-* [proc/mem_segements](SysProg/proc/mem_segements.c)
+* [proc/mem_segements](SysProg/proc/mem_segents.c)
 
 ---
 
@@ -4112,7 +4118,7 @@ techniques in this example, shown only for demonstration purposes.
 
 [memalloc/free_and_sbrk.c](SysProg/memalloc/free_and_sbrk.c)
 
-You also may want to refer to the lower left side of this
+(You also may want to refer to the lower left side of this
 [Info-Graphic](InfoGraphics/ExecutionModel.png) once more.)
 
 ---
@@ -4127,7 +4133,7 @@ The following example shows how to access this information:
 
 #### Retrieving System Limits and Options
 
-The following examples shows how to access some of this information:
+The following examples show how to access some of this information:
 
 * [syslim/t_sysconf.c](SysProg/syslim/t_sysconf.c)
 * [syslim/t_fpathconf.c](SysProg/syslim/t_fpathconf.c)
@@ -4788,9 +4794,20 @@ communication path:
 ---
 
 * [altio/epoll_input.c](SysProg/altio/epoll_input.c)
-* [altio/epoll_input.c](SysProg/altio/self_pipe.c)
+* [altio/self_pipe.c](SysProg/altio/self_pipe.c)
 
 ---
 
 ## Goodbye
+
+Besides the print-out you have access to this document in form of files:
+
+* ccpp-slides-psi.html -- the presentation used during this training
+* ccpp-training-psi.html -- a sequential format for reading in a browser
+* ccpp-training-psi.pdf -- as before, for viewing with a PDF reader
+* ccpp-training-psi.md -- the source format for all
+
+The source is transformed into the first two versions via [pandoc].
+
+  [pandoc]: http://johnmacfarlane.net/pandoc/
 
