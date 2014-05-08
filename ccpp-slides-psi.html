@@ -2633,7 +2633,7 @@ Note: From here on the course is to a large part a guided tour through a selecti
 <h4 id="scanning-directories">Scanning Directories</h4>
 <p>The interface to scan directories to find the names of the contained files and sub-directories, as constituted by <code>opendir</code>, <code>readdir´ and</code>closedir`, is demonstrated in the following example:</p>
 <ul>
-<li><a href="SysProg/dir_links/list_files.c">dir_links/list_files.c</a></li>
+<li><a href="SysProg/dirs_links/list_files.c">dirs_links/list_files.c</a></li>
 </ul>
 <p><strong>As <code>readdir</code> maintains some internal state (i.e. how far it progressed) it is NOT reentrant and hence should never be used with multi-threading.</strong></p>
 <p>The safe replacement is <code>readdir_r</code> (r is for reentrant).</p>
@@ -2643,7 +2643,7 @@ Note: From here on the course is to a large part a guided tour through a selecti
 <h4 id="walking-the-file-tree-including-sub-directories">Walking The File Tree Including Sub-Directories</h4>
 <p>This can be done with <code>nftw</code> which is not directly a system call but a utility function in the library and hence documented in section 3 of the online manual:</p>
 <ul>
-<li><a href="SysProg/dir_links/nftw_dir_tree.c">dir_links/nftw_dir_tree.c</a></li>
+<li><a href="SysProg/dirs_links/nftw_dir_tree.c">dirs_links/nftw_dir_tree.c</a></li>
 </ul>
 </div>
 <div class="section slide level1" id="section-267">

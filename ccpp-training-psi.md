@@ -4004,7 +4004,7 @@ The interface to scan directories to find the names of the contained
 files and sub-directories, as constituted by `opendir`, `readdir´ and
 `closedir`, is demonstrated in the following example:
 
-* [dir_links/list_files.c](SysProg/dir_links/list_files.c)
+* [dirs_links/list_files.c](SysProg/dirs_links/list_files.c)
 
 **As `readdir` maintains some internal state (i.e. how far it progressed)
 it is NOT reentrant and hence should never be used with multi-threading.**
@@ -4019,7 +4019,7 @@ This can be done with `nftw` which is not directly a system call but a
 utility function in the library and hence documented in section 3 of
 the online manual:
 
-* [dir_links/nftw_dir_tree.c](SysProg/dir_links/nftw_dir_tree.c)
+* [dirs_links/nftw_dir_tree.c](SysProg/dirs_links/nftw_dir_tree.c)
 
 ---
 
