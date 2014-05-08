@@ -1,6 +1,8 @@
 #include <thread> // MW
 #include <vector> // MW
 
+#include "listing_9.9.cpp"	// MW
+
 std::mutex config_mutex;
 std::vector<interruptible_thread> background_threads;
 

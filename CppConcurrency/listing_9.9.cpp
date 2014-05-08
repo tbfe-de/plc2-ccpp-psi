@@ -1,10 +1,13 @@
+#include <future>	// MW
+
 class interrupt_flag
 {
 public:
     void set();
     bool is_set() const;
 };
-thread_local interrupt_flag this_thread_interrupt_flag;
+// thread_local interrupt_flag this_thread_interrupt_flag;
+__thread interrupt_flag this_thread_interrupt_flag;
 
 class interruptible_thread
 {

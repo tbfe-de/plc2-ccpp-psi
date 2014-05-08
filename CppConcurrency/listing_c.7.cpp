@@ -125,7 +125,9 @@ class atm
                 {
                     if(!pin.empty())
                     {
-                        pin.pop_back();
+                        // pin.pop_back();		// MW
+			pin.resize(pin.size()-1);	// MW
+
                     }
                 }
                 )

@@ -6,7 +6,7 @@ namespace messaging
     {
         queue q;
     public:
-        sender operator()()	// MW
+        operator sender()	// MW
         {
             return sender(&q);
         }

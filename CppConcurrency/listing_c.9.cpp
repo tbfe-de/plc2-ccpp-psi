@@ -1,5 +1,7 @@
 #include <iostream>
 
+std::mutex iom;	// MW - http://www.manning-sandbox.com/message.jspa?messageID=137048
+
 class interface_machine
 {
     messaging::receiver incoming;

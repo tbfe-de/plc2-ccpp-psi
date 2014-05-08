@@ -89,7 +89,6 @@
 #	listing_9.10.cpp	(not a complete program)
 #	listing_9.11.cpp	(not a complete program)
 #	listing_9.12.cpp	(not a complete program)
-#	listing_9.13.cpp	(needs some of the above)
 #	listing_10.1.cpp	(not a complete program)
 #	listing_a.1.cpp		(not a complete program)
 #	listing_a.2.cpp		(not a complete program)
@@ -124,7 +123,8 @@ STANDALONE=\
 	listing_4.5.cpp\
 	listing_4.6.cpp\
 	listing_5.10.cpp\
-	listing_6.2.cpp
+	listing_6.2.cpp\
+	listing_9.13.cpp
 
 ATM_HEADERS=\
 	listing_c.1.cpp\
@@ -148,8 +148,7 @@ ATM_MODULES=\
 .cpp.o:
 	g++ -c -std=c++0x $<
 
-# all: $(STANDALONE:.cpp=) atm
-all: $(STANDALONE:.cpp=)
+all: $(STANDALONE:.cpp=) atm
 	@echo "all targets up-to-date"
 atm: $(ATM_HEADERS) $(ATM_MODULES:.cpp=.o)
 	g++ -std=c++0x $(ATM_MODULES:.cpp=.o) -pthread -Wl,--no-as-needed -o $@
